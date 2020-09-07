@@ -1,0 +1,5 @@
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScannerTest\obj\x86\Debug\ADFScannerTest.csprojAssemblyReference.cache
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScannerTest\obj\x86\Debug\ADFScannerTest.Form1.resources
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScannerTest\obj\x86\Debug\ADFScannerTest.Properties.Resources.resources
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScannerTest\obj\x86\Debug\ADFScannerTest.csproj.GenerateResource.cache
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScannerTest\obj\x86\Debug\ADFScannerTest.csproj.CoreCompileInputs.cache

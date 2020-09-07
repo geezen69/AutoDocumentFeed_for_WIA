@@ -20,7 +20,7 @@ namespace ADFScanner
         {
             string deviceid;
             //Choose Scanner
-            CommonDialogClass class1 = new CommonDialogClass();
+            CommonDialog class1 = new CommonDialog();
             Device d = class1.ShowSelectDevice(WiaDeviceType.UnspecifiedDeviceType, true, false);
             if (d != null)
             {
@@ -31,14 +31,14 @@ namespace ADFScanner
                 //no scanner chosen
                 return;
             }
-            WIA.CommonDialog WiaCommonDialog = new CommonDialogClass();
+            WIA.CommonDialog WiaCommonDialog = new CommonDialog();
             bool hasMorePages = true;
             int x = 0;
             int numPages = 0;
             while (hasMorePages)
             {
                 //Create DeviceManager
-                DeviceManager manager = new DeviceManagerClass();
+                DeviceManager manager = new DeviceManager();
                 Device WiaDev = null;
                 foreach (DeviceInfo info in manager.DeviceInfos)
                 {
@@ -60,7 +60,9 @@ namespace ADFScanner
                 Item.Properties["6148"].set_Value(dpi);
                 try
                 {//WATCH OUT THE FORMAT HERE DOES NOT MAKE A DIFFERENCE... .net will load it as a BITMAP!
-                    img = (ImageFile)WiaCommonDialog.ShowTransfer(Item, WIA.FormatID.wiaFormatJPEG, false);
+
+                    var testFormat = FormatID.wiaFormatJPEG;
+                    img = (ImageFile)WiaCommonDialog.ShowTransfer(Item, testFormat, false);
                     //process image:
                     //Save to file and open as .net IMAGE
                     string varImageFileName = Path.GetTempFileName();

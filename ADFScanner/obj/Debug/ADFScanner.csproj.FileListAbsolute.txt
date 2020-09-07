@@ -1,0 +1,3 @@
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScanner\obj\Debug\Interop.WIA.dll
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScanner\obj\Debug\ADFScanner.csproj.ResolveComReference.cache
+C:\Work From Home\AutoDocumentFeed_for_WIA\ADFScanner\obj\Debug\ADFScanner.csproj.CoreCompileInputs.cache
